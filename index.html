@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Star Wars RPG</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Added link to Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Bungee|Exo" rel="stylesheet">
+	<!-- Reset and custom styles -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Added link to the jQuery Library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- JS Link-->
+	<script src="assets/javascript/script.js"></script>
+</head>
+<body>
+	<div class="head">
+		<h1 class="head-title">Star Wars RPG</h1>
+	</div>
+	<div class="wrapper">
+		<div class="image-container clear">
+
+			<div id="obi" class="image-box option">
+				<div>Obi-Wan Kenobi</div>
+				<img src="assets/images/obi.jpg" class="character-img"/>
+				<div id="obi-health"></div>
+			</div>
+
+			<div id="luke" class="image-box option">
+				<div>Luke Skywalker</div>
+				<img src="assets/images/luke.jpg" class="character-img"/>
+				<div id="luke-health"></div>
+			</div>
+
+			<div id="sid" class="image-box option">
+				<div>Darth Sidious</div>
+				<img src="assets/images/sidious.jpg" class="character-img"/>
+				<div id="sid-health"></div>
+			</div>
+
+			<div id="maul" class="image-box option">
+				<div>Dark Maul</div>
+				<img src="assets/images/maul.jpg" class="character-img"/>
+				<div id="maul-health"></div>
+			</div>
+		</div>
+
+		<div id="player-character" class="character-area">
+			<h2>Your Character</h2>
+			<div id="selected-character"></div>
+		</div>
+		
+		<div class="other-section">
+			<h2>Enemies Available to Attack</h2>
+			<div id="fight-options"></div>
+		</div>
+		<div class="other-section">
+			<h2>Fight Section</h2>
+			<div id="selected-enemy"></div>
+		</div>
+		<div class="other-section">
+			<button id="attack-button">Attack</button>
+		</div>
+		<div class="other-section">
+			<h2>Defender</h2>
+			<div id="defender"></div>
+		</div>
+		<div class="other-section">
+			<div id="status-text"></div>
+		</div>
+
+	</div>
+</body>
+</html>
